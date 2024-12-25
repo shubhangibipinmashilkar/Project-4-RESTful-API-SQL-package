@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post index</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Quora Posts</h1>
+    <div class="post">
+       <% for(let eachPost of posts){%>
+        <h3 class="user" id="user">@<%= eachPost.name%><br><br>
+        <%= eachPost.content%>
+        <a href="http://localhost:8080/posts/<%=eachPost.id%>">See the post</a>
+        <a href="http://localhost:8080/posts/<%=eachPost.id%>/edit">&nbsp;&nbsp;Edit</a>
+        </h3><br>
+        <% } %>
+    </div>
+    <a href="http://localhost:8080/posts/new">Create new post</a>
+</body>
+</html>

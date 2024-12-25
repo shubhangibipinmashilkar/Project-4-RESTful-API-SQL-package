@@ -1,0 +1,16 @@
+h1{
+    color:maroon;
+}
+
+.content,.user{
+    background-color:wheat;
+    
+}
+
+#user{
+    font-style:italic;
+}
+
+a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
